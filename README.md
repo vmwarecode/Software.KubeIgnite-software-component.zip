@@ -1,1 +1,0 @@
-# Software.KubeIgnite-software-component.zip

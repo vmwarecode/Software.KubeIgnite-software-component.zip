@@ -1,0 +1,7 @@
+name: "auto-generated-pkg-a2140465-a2bc-4edb-8f08-2f45679d722a"
+productVersion: "7.3.0-SNAPSHOT"
+data:
+- locator: "software-component/Software.KubeIgnite.yaml"
+  name: "Kube-Ignite v1.0"
+  description: ""
+exportTime: "2017-09-29T19:16:57.390Z"

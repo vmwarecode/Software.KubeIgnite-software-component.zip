@@ -1,0 +1,944 @@
+'@type': "SoftwareComponentType"
+createdDate: "2017-09-07T22:26:45.411Z"
+lastUpdated: "2017-09-25T20:25:40.629Z"
+id: "Software.KubeIgnite"
+name: "Kube-Ignite v1.0"
+description: ""
+publishStatus: "PUBLISHED"
+publishStatusName: "Published"
+schema:
+  fields:
+  - id: "subnet_prefix"
+    label: "subnet_prefix"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: ""
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "nsx_ovs_build"
+    label: "nsx_ovs_build"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "6383692"
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "pod_logicalswitch_id"
+    label: "pod_logicalswitch_id"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "8c81d618-001a-40dc-a25e-57a43ae3b9b5"
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "KubeMaster"
+    label: "KubeMaster"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: ""
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "script_path"
+    label: "script_path"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "/root/kube-ignite"
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "nsx_api_password"
+    label: "nsx_api_password"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "VMware1!"
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "NSX_NCP_Cluster"
+    label: "NSX_NCP_Cluster"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "vra01"
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "nsx_ujo_path"
+    label: "nsx_ujo_path"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: ""
+    isMultiValued: false
+  - id: "KubeNode"
+    label: "KubeNode"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: ""
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "ncp_docker_image"
+    label: "ncp_docker_image"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "registry.local/ob-$nsx_ujo_build/nsx-ncp:latest"
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "domain_name"
+    label: "domain_name"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "core.hypervizor.com"
+    isMultiValued: false
+  - id: "nsx_cni_release"
+    label: "nsx_cni_release"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "1.0.0"
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "nsx_api_managers"
+    label: "nsx_api_managers"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: ""
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "host"
+    label: "Container"
+    description: ""
+    dataType:
+      type: "ref"
+      componentTypeId: "com.vmware.csp.iaas.blueprint.service"
+      classId: "Infrastructure.Machine.Schema"
+      label: "Machine"
+    state:
+      dependencies: []
+      facets:
+      - type: "internal"
+        value:
+          type: "constantClause"
+          value:
+            type: "boolean"
+            value: true
+      - type: "visible"
+        value:
+          type: "constantClause"
+          value:
+            type: "boolean"
+            value: false
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "nsx_ovs_release"
+    label: "nsx_ovs_release"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "2.7.0"
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "NSX_Pods_Subnet_CIDR"
+    label: "NSX_Pods_Subnet_CIDR"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: ""
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "kubeToken"
+    label: "kubeToken"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "kube00.ignite0000000000"
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "mgmt_uplink_port"
+    label: "mgmt_uplink_port"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "ens192"
+    isMultiValued: false
+  - id: "KubeMaster_hostname"
+    label: "KubeMaster_hostname"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: ""
+    isMultiValued: false
+  - id: "nsx_ujo_build"
+    label: "nsx_ujo_build"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "6500154"
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "ovs_uplink_port"
+    label: "ovs_uplink_port"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "ens224"
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "apiserver_host_port"
+    label: "apiserver_host_port"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "6443"
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "nsx_api_user"
+    label: "nsx_api_user"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "admin"
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "kube_custom"
+    label: "kube_custom"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "yes"
+    isMultiValued: false
+  - id: "kubeVersion"
+    label: "kubeVersion"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "1.6.6"
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "kube_role"
+    label: "kube_role"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: ""
+    isMultiValued: false
+  - id: "apiserver_host_ip"
+    label: "apiserver_host_ip"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: ""
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: true
+    isMultiValued: false
+  - id: "Git_Starter_App"
+    label: "Git_Starter_App"
+    description: ""
+    dataType:
+      type: "primitive"
+      typeId: "STRING"
+    state:
+      dependencies: []
+      facets:
+      - type: "defaultValue"
+        value:
+          type: "constant"
+          value:
+            type: "string"
+            value: "https://github.com/hanymichael/NSX-CNA-Lab.git"
+      - type: "mandatory"
+        value:
+          type: "constant"
+          value:
+            type: "boolean"
+            value: false
+    isMultiValued: false
+containerFieldId: "host"
+lifecycleTasks:
+- createdDate: "2017-09-07T22:28:24.253Z"
+  lastUpdated: "2017-09-29T17:48:26.450Z"
+  script:
+    scriptContent: "#!/bin/bash\n\necho \"\"\necho '    __ __      __            \
+      \   ____            _ __     '\necho '   / //_/_  __/ /_  ___        /  _/___\
+      \ _____  (_) /____ '\necho '  / ,< / / / / __ \\/ _ \\______ / // __ `/ __ \\\
+      / / __/ _ \\'\necho ' / /| / /_/ / /_/ /  __/_____// // /_/ / / / / / /_/  __/'\n\
+      echo '/_/ |_\\__,_/_.___/\\___/     /___/\\__, /_/ /_/_/\\__/\\___/ '\necho\
+      \ '                                /____/                   '\necho '═══════\
+      ═══════════════════════════════════════════════'\necho 'Author: Hany Michael\t\
+      \t\t\t\t\tVersion: 1.0'\necho '═════════════════════════════════════════════\
+      ═════════'\n\n\n###############################################################################################\n\
+      ## The Kube Commons Function\n###############################################################################################\n\
+      \nfuncLinuxDistro () {\n  if [ -f /etc/debian_version ] ; then\n    if [[ $(grep\
+      \ \"DISTRIB_ID=Ubuntu\" /etc/lsb-release)   ]] ; then\n      linux_distro=1\n\
+      \    fi\n  elif [[ $(cat /etc/*release | grep -i centos) ]] || [[ $(cat /etc/*release\
+      \ | grep -i rhel) ]] || [[ $(cat /etc/*release | grep -i \"red hat\") ]]; then\n\
+      \      linux_distro=2\n  else\n    linux_distro=0\n  fi\n  return $linux_distro\n\
+      }\n\n\nfuncKubeCommons () {\n    # Adding hostnames\n    if [ \"$linux_distro\"\
+      \ == 1 ] ; then\n            # Get the IP address of the VM\n            Ubuntu_IP_ADDRESS=\"\
+      $(ifconfig | grep -A 1 \"$mgmt_uplink_port\" | tail -1 | cut -d ':' -f 2 | cut\
+      \ -d ' ' -f 1)\"\n            if [ \"$kube_role\" == \"master\" ]; then\n  \
+      \          echo \"kube_role: $kube_role\"\n            echo \"IP Address: $Ubuntu_IP_ADDRESS\"\
+      \n            echo \"Hostname: $HOSTNAME\" ; echo \"\"\n            echo \"\
+      $Ubuntu_IP_ADDRESS  $HOSTNAME.$domain_name $HOSTNAME\" >> /etc/hosts\n     \
+      \       else\n            echo \"kube_role: $kube_role\"\n            echo \"\
+      IP Address: $Ubuntu_IP_ADDRESS\"   \n            echo \"Hostname: $HOSTNAME\"\
+      \ ; echo \"\"\n            echo \"$KubeMaster  $KubeMaster_hostname.$domain_name\
+      \ $KubeMaster_hostname\" >> /etc/hosts\n            echo \"$Ubuntu_IP_ADDRESS\
+      \  $HOSTNAME.$domain_name $HOSTNAME\" >> /etc/hosts\n            fi\n    elif\
+      \ [ \"$linux_distro\" == 2 ] ; then\n            # Get the IP address of the\
+      \ VM\n            RHEL_IP_ADDRESS=\"$(/usr/sbin/ifconfig | grep -A 1 \"$mgmt_uplink_port\"\
+      \ | tail -1 | cut -d 't' -f 2 | cut -d ' ' -f 2)\"\n            if [ \"$kube_role\"\
+      \ == \"master\" ]; then\n            echo \"kube_role: $kube_role\"\n      \
+      \      echo \"IP Address: $RHEL_IP_ADDRESS\"\n            echo \"Hostname: $HOSTNAME\"\
+      \ ; echo \"\"\n            echo \"$RHEL_IP_ADDRESS  $HOSTNAME.$domain_name $HOSTNAME\"\
+      \ >> /etc/hosts\n            else\n            echo \"kube_role: $kube_role\"\
+      \n            echo \"IP Address: $RHEL_IP_ADDRESS\"   \n            echo \"\
+      Hostname: $HOSTNAME\" ; echo \"\"\n            echo \"$KubeMaster  $KubeMaster_hostname.$domain_name\
+      \ $KubeMaster_hostname\" >> /etc/hosts\n            echo \"$RHEL_IP_ADDRESS\
+      \  $HOSTNAME.$domain_name $HOSTNAME\" >> /etc/hosts\n            fi \n    fi\n\
+      \n\n\n\n    # Check JQ as a dependency \n    jq\n    if [ $? = 127 ]; then\n\
+      \    wget http://stedolan.github.io/jq/download/linux64/jq\n    chmod +x ./jq\n\
+      \    cp jq /usr/bin\n    else\n    echo \"JQ is installed.\"\n    fi\n\n   \
+      \ echo \"\"\n    echo \"╔═══════════════════════════════════════════════════\
+      ════════════════════════════════╗\"\n    echo \"║ Tagging the pod traffic Logical\
+      \ Switches with the NCP node/name(s)                ║\"\n    echo \"╚═══════\
+      ════════════════════════════════════════════════════════════════════════════\
+      ╝\"\n    # Get all NSX Logical Ports\n    nsx_logicalports=$(curl --silent \
+      \ -k -u $nsx_api_user:$nsx_api_password -H \"Content-Type: application/json\"\
+      \ -X GET \"https://$nsx_api_managers/api/v1/logical-ports\")\n    # Get the\
+      \ individual logical ports of the Pod Traffic Logical Switch\n    VM_logicalport_id=$(echo\
+      \ $nsx_logicalports | jq -c '.results[] | select( (.display_name | contains('\\\
+      \"$HOSTNAME\\\"')) and (.logical_switch_id | contains('\\\"$pod_logicalswitch_id\\\
+      \"')) )' | jq .id -r)\n    # Get the  Logical Port info before updating\n  \
+      \  VM_logicalport_attachement_id=$(curl --silent  -k -u $nsx_api_user:$nsx_api_password\
+      \ -H \"Content-Type: application/json\" -X GET \"https://$nsx_api_managers/api/v1/logical-ports/$VM_logicalport_id\"\
+      \ | jq .attachment.id -r)\n    VM_logicalport_revision=$(curl --silent  -k -u\
+      \ $nsx_api_user:$nsx_api_password -H \"Content-Type: application/json\" -X GET\
+      \ \"https://$nsx_api_managers/api/v1/logical-ports/$VM_logicalport_id\" | jq\
+      \ ._revision -r)\n    # Updating the Logical Ports info with ncp tags\n    curl\
+      \ --silent  -k -u $nsx_api_user:$nsx_api_password -X PUT -H \"Content-Type:\
+      \ application/json\" -d '{ \"admin_state\": \"UP\", \"logical_switch_id\": '\\\
+      \"$pod_logicalswitch_id\\\"',\t\"tags\": [ { \"scope\": \"ncp/cluster\", \"\
+      tag\": '\\\"$NSX_NCP_Cluster\\\"' }, { \"scope\": \"ncp/node_name\", \"tag\"\
+      : '\\\"$HOSTNAME\\\"' } ],  \"attachment\": { \"attachment_type\": \"VIF\",\
+      \ \"id\": '\\\"$VM_logicalport_attachement_id\\\"' },  \"_revision\": \"'\"\
+      $VM_logicalport_revision\"'\"}'  \"https://$nsx_api_managers/api/v1/logical-ports/$VM_logicalport_id\"\
+      \n   \n    echo \"\"\n    echo \"\"\n    echo \"╔═══════════════════════════\
+      ════════════════════════════╗\"\n    echo \"║ Setting the repos            \
+      \                         ║\"\n    echo \"╚═════════════════════════════════\
+      ══════════════════════╝\"\n    if [ \"$linux_distro\" == 1 ] ; then\n    # Setting\
+      \ the geenral Repos for Ubuntu\n    curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg\
+      \ | apt-key add -\n    # Setting the k8s repo for Ubuntu\ncat <<EOF > /etc/apt/sources.list.d/kubernetes.list\n\
+      deb http://apt.kubernetes.io/ kubernetes-xenial main\nEOF\n    elif [ \"$linux_distro\"\
+      \ == 2 ] ; then\n    # Setting the geenral Repos for RHEL\n    subscription-manager\
+      \ repos --disable=*\n    subscription-manager repos --enable=rhel-7-server-rpms\
+      \ --enable=rhel-7-server-optional-rpms --enable=rhel-7-server-extras-rpms --enable=rhel-7-server-rh-common-rpms\
+      \ --enable=rhel-ha-for-rhel-7-server-rpms\n    # Setting the k8s repo for RHEL\n\
+      cat <<EOF > /etc/yum.repos.d/kubernetes.repo\n[kubernetes]\nname=Kubernetes\n\
+      baseurl=http://yum.kubernetes.io/repos/kubernetes-el7-x86_64\nenabled=1\ngpgcheck=0\n\
+      repo_gpgcheck=0\nEOF\n    fi\n\n\n    echo \"\"\n    echo \"\"\n    echo \"╔\
+      ═══════════════════════════════════════════════════════╗\"\n    echo \"║ Updating..\
+      \                                            ║\"\n    echo \"╚══════════════\
+      ═════════════════════════════════════════╝\"\n    if [ \"$linux_distro\" ==\
+      \ 1 ] ; then\n    apt-get update\n    apt-get install -y apt-utils\n    elif\
+      \ [ \"$linux_distro\" == 2 ] ; then\n    yum update -y \n    fi\n\n\n    echo\
+      \ \"\"\n    echo \"\"\n    echo \"╔═════════════════════════════════════════\
+      ══════════════╗\"\n    echo \"║ Disable Firewalls                          \
+      \           ║\"\n    echo \"╚═══════════════════════════════════════════════\
+      ════════╝\"\n    # Disable SELinux\n    # setenforce 0\n    # Install iptables\
+      \ (required by Docker & K8s)\n    # yum install iptables-services.x86_64 -y\n\
+      \    # Stope and disable the firewall services \n    #systemctl stop firewalld.service\n\
+      \    #systemctl disable firewalld.service\n    #systemctl mask firewalld.service\n\
+      \    #systemctl start iptables\n    #systemctl enable iptables\n    #systemctl\
+      \ unmask iptables\n    #iptables -F\n    #service iptables save\n\n    echo\
+      \ \"\"\n    echo \"\"\n    echo \"╔═════════════════════════════════════════\
+      ══════════════╗\"\n    echo \"║ Downloading and Installing Open-vSwitch    \
+      \           ║\"\n    echo \"╚═══════════════════════════════════════════════\
+      ════════╝\"\n    \n    if [ \"$kube_custom\" == \"yes\" ]; then\n        if\
+      \ [ \"$linux_distro\" == 1 ] ; then\n        # Installing and Configuring OVS\
+      \ for Ubuntu\n        /usr/bin/dpkg -i $nsx_ujo_path/openvswitch-common_$nsx_ovs_release.$nsx_ovs_build-1_amd64.deb\n\
+      \        /usr/bin/dpkg -i $nsx_ujo_path/openvswitch-switch_$nsx_ovs_release.$nsx_ovs_build-1_amd64.deb\n\
+      \        /usr/bin/dpkg -i $nsx_ujo_path/openvswitch-datapath-dkms_$nsx_ovs_release.$nsx_ovs_build-1_all.deb\n\
+      \        # Reload OVS\n        service openvswitch-switch force-reload-kmod\n\
+      \n        elif [ \"$linux_distro\" == 2 ] ; then\n          # Installing and\
+      \ Configuring OVS for RHEL\n          yum install -y $nsx_ujo_path/openvswitch-$nsx_ovs_release.$nsx_ovs_build-1.x86_64.rpm\n\
+      \          yum install -y $nsx_ujo_path/openvswitch-kmod-$nsx_ovs_release.$nsx_ovs_build-1.el7.x86_64.rpm\n\
+      \          yum install -y $nsx_ujo_path/kmod-openvswitch-$nsx_ovs_release.$nsx_ovs_build-1.el7.x86_64.rpm\n\
+      \          # Reload OVS\n          /etc/init.d/openvswitch force-reload-kmod\n\
+      \        fi\n\n        # Create the OVS bridge\n        ovs-vsctl add-br br-int\n\
+      \        ovs-vsctl set-fail-mode br-int standalone\n        ovs-vsctl add-port\
+      \ br-int $ovs_uplink_port\n        ovs-vsctl set Interface $ovs_uplink_port\
+      \ ofport=1\n\n    else\n    echo \"Skipping OVS Install/Config since we are\
+      \ in non-custom mode.\"\n    fi\n\n    echo \"\"\n    echo \"\"\n    echo \"\
+      ╔═══════════════════════════════════════════════════════╗\"\n    echo \"║ Installing\
+      \ Kubernetes v $kubeVersion                         ║\"\n    echo \"╚═══════\
+      ════════════════════════════════════════════════╝\"\n    if [ \"$linux_distro\"\
+      \ == 1 ] ; then\n    apt-get install -y kubelet=$kubeVersion-00 kubeadm=$kubeVersion-00\
+      \ kubectl=$kubeVersion-00 kubernetes-cni\n    elif [ \"$linux_distro\" == 2\
+      \ ] ; then\n    yum install -y kubelet-$kubeVersion-0 kubectl-$kubeVersion-0\
+      \ kubeadm-$kubeVersion-0 kubernetes-cni\n    rpm -e kubernetes-cni --nodeps\n\
+      \    fi\n\n    echo \"\"\n    echo \"\"\n    echo \"╔═══════════════════════\
+      ════════════════════════════════╗\"\n    echo \"║ Downloading and installing\
+      \ the CNI package            ║\"\n    echo \"╚══════════════════════════════\
+      ═════════════════════════╝\"\n    if [ \"$linux_distro\" == 1 ] ; then\n   \
+      \ /usr/bin/dpkg -i $nsx_ujo_path/nsx-cni_2.0.0.0.0.6500154_amd64.deb\n    elif\
+      \ [ \"$linux_distro\" == 2 ] ; then\n    yum install -y $nsx_ujo_path/nsx-cni-2.0.0.0.0.6500154.x86_64.rpm\n\
+      \    fi\n\n}\n\n\n###############################################################################################\n\
+      ## The Kube Master Function\n###############################################################################################\n\
+      funcKubeMaster () {\necho \"\"\necho \"\"\necho \"╔═════════════════════════\
+      ══════════════════════════════╗\"\necho \"║ Configuring Kubernetes with Kubeadm\
+      \                   ║\"\necho \"╚═══════════════════════════════════════════\
+      ════════════╝\"\nsudo kubeadm init --kubernetes-version v$kubeVersion --token\
+      \ $kubeToken --skip-preflight-checks\n\necho \"\"\necho \"\"\necho \"╔══════\
+      ═════════════════════════════════════════════════╗\"\necho \"║ Setting the k8s\
+      \ config on the master                  ║\"\necho \"╚═══════════════════════\
+      ════════════════════════════════╝\"\nsudo cp /etc/kubernetes/admin.conf $HOME/\n\
+      sudo cp /etc/kubernetes/admin.conf /root/\nchown $(id -u):$(id -g) $HOME/admin.conf\n\
+      export KUBECONFIG=$HOME/admin.conf\necho 'export KUBECONFIG=$HOME/admin.conf'\
+      \ >> ~/.bashrc\n\necho \"\"\necho \"\"\necho \"╔════════════════════════════\
+      ═══════════════════════════╗\"\necho \"║ Joining the KubeNodes to the master\
+      \                   ║\"\necho \"╚═══════════════════════════════════════════\
+      ════════════╝\"\necho \"Joining the nodes...\"\n# ssh -o StrictHostKeyChecking=no\
+      \ -o UserKnownHostsFile=/dev/null root@$KubeNode screen -d -m \"kubeadm join\
+      \ --token $kubeToken $KubeMaster:6443 --skip-preflight-checks\"\n# ssh -o StrictHostKeyChecking=no\
+      \ -o UserKnownHostsFile=/dev/null root@$KubeNode02 screen -d -m \"kubeadm join\
+      \ --token $kubeToken $KubeMaster:6443 --skip-preflight-checks\"\n# sleep 1m\n\
+      # enabling pod scheduling on the master node\nkubectl taint nodes --all node-role.kubernetes.io/master-\n\
+      # get the nodes status\nkubectl get nodes -o wide\n\necho \"\"\necho \"\"\n\
+      echo \"╔═══════════════════════════════════════════════════════╗\"\necho \"║\
+      \ Loading the NCP docker image to the local registery   ║\"\necho \"╚═══════\
+      ════════════════════════════════════════════════╝\"\n# docker load -i /root/nsxt20/nsx-ncp-ob-6500154.tar\n\
+      \necho \"\"\necho \"\"\necho \"╔════════════════════════════════════════════\
+      ═════════════════╗\"\necho \"║ Setting the clusteradmin role & creating custom\
+      \ namespace   ║\"\necho \"╚═════════════════════════════════════════════════\
+      ════════════╝\"\nkubectl create clusterrolebinding default:default:clusteradmin\
+      \ --clusterrole cluster-admin --serviceaccount default:default\nif [ -z \"$Custom_Namespace\"\
+      \ ]; then \n  echo \"No custom namespaces provided.\"\n  else \n  kubectl create\
+      \ namespace $Custom_Namespace\nfi\n# Get namespaces\nkubectl get namespaces\
+      \ \n\necho \"\"\necho \"\"\necho \"╔════════════════════════════════════════\
+      ═══════════════╗\"\necho \"║ Writting the NCP.INI file and creating the configMaps\
+      \ ║\"\necho \"╚═══════════════════════════════════════════════════════╝\"\n\
+      # Writing the file with the variables\necho '[DEFAULT]\n[coe]\ncluster = '$NSX_NCP_Cluster'\n\
+      [k8s]\napiserver_host_ip = '$apiserver_host_ip'\napiserver_host_port = '$apiserver_host_port'\n\
+      ca_file = /var/run/secrets/kubernetes.io/serviceaccount/ca.crt\nclient_token_file\
+      \ = /var/run/secrets/kubernetes.io/serviceaccount/token\ninsecure = True\ningress_mode\
+      \ = nat\n[nsx_v3]\nnsx_api_user = '$nsx_api_user'\nnsx_api_password = '$nsx_api_password'\n\
+      nsx_api_managers = '$nsx_api_managers'\ninsecure = True\nsubnet_prefix = '$subnet_prefix'\n\
+      [nsx_node_agent]\n[nsx_kube_proxy]\novs_uplink_port = '$ovs_uplink_port'' >\
+      \ /tmp/ncp.ini\n# Creating the configMaps\nkubectl create configmap nsx-ncp-config\
+      \ --from-file=/tmp/ncp.ini\nkubectl create configmap nsx-node-agent-config --from-file=/tmp/ncp.ini\n\
+      \necho \"\"\necho \"\"\necho \"╔════════════════════════════════════════════\
+      ═══════════════════╗\"\necho \"║ Writting the NCP RC file and creating the ReplicaControllers\
+      \  ║\"\necho \"╚════════════════════════════════════════════════════════════\
+      ═══╝\"\n# Writting the RC yaml file\necho 'apiVersion: v1\nkind: ReplicationController\n\
+      metadata:\n  # VMware NSX Container Plugin\n  name: nsx-ncp\n  labels:\n   \
+      \ tier: nsx-networking\n    component: nsx-ncp\n    version: v1\nspec:\n  #\
+      \ Active-Active/Active-Standby is not supported in current release.\n  # so\
+      \ replica *must be* 1.\n  replicas: 1\n  template:\n    metadata:\n      labels:\n\
+      \        tier: nsx-networking\n        component: nsx-ncp\n        version:\
+      \ v1\n    spec:\n      # NCP shares the host management network.\n      hostNetwork:\
+      \ true\n      # If configured with ServiceAccount, update the ServiceAccount\n\
+      \      # name below.\n      #serviceAccountName: ncp-svc-account\n      containers:\n\
+      \        - name: nsx-ncp\n          # Docker image for NCP\n          image:\
+      \ registry.local/ob-6500154/nsx-ncp:latest\n          imagePullPolicy: IfNotPresent\n\
+      \          readinessProbe:\n            exec:\n              command:\n    \
+      \          - cat\n              - /tmp/ncp_ready\n            initialDelaySeconds:\
+      \ 5\n            periodSeconds: 5\n            failureThreshold: 5\n       \
+      \   volumeMounts:\n          - name: config-volume\n            # NCP expects\
+      \ ncp.ini is present in /etc/nsx-ujo\n            mountPath: /etc/nsx-ujo/ncp.ini\n\
+      \            subPath: ncp.ini\n            readOnly: true\n      volumes:\n\
+      \        - name: config-volume\n          # ConfigMap nsx-ncp-config is expected\
+      \ to supply ncp.ini\n          configMap:\n            name: nsx-ncp-config'\
+      \ > /tmp/ncp-rc.yaml\n# Creating the Replica Controller\nkubectl apply -f /tmp/ncp-rc.yaml\n\
+      \necho \"\"\necho \"\"\necho \"╔════════════════════════════════════════════\
+      ═══════════════════╗\"\necho \"║ Writting the NCP DS file and creating the DeamonSets\
+      \          ║\"\necho \"╚════════════════════════════════════════════════════\
+      ═══════════╝\"\nif [ \"$linux_distro\" == 1 ] ; then\n# Writting the Ubuntu\
+      \ DS yaml file\necho 'apiVersion: extensions/v1beta1\nkind: DaemonSet\nmetadata:\n\
+      \  name: nsx-node-agent\n  labels:\n    tier: nsx-networking\n    component:\
+      \ nsx-node-agent\n    version: v1\nspec:\n  template:\n    metadata:\n     \
+      \ annotations:\n        container.apparmor.security.beta.kubernetes.io/nsx-node-agent:\
+      \ localhost/node-agent-apparmor\n      labels:\n        tier: nsx-networking\n\
+      \        component: nsx-node-agent\n        version: v1\n    spec:\n      hostNetwork:\
+      \ true\n      # If configured with ServiceAccount, update the ServiceAccount\n\
+      \      # name below.\n      #serviceAccountName: nsx-node-agent-svc-account\n\
+      \      containers:\n        - name: nsx-node-agent\n          # Docker image\
+      \ for NCP\n          image: registry.local/ob-6500154/nsx-ncp:latest\n     \
+      \     imagePullPolicy: IfNotPresent\n          # override NCP image entrypoint\n\
+      \          command: [\"start_node_agent\"]\n          livenessProbe:\n     \
+      \       exec:\n              command:\n                - /bin/sh\n         \
+      \       - -c\n                - ps aux | grep [n]sx_node_agent\n           \
+      \ initialDelaySeconds: 5\n            periodSeconds: 5\n          securityContext:\n\
+      \            capabilities:\n              add:\n                - NET_ADMIN\n\
+      \                - SYS_ADMIN\n                - SYS_PTRACE\n               \
+      \ - DAC_READ_SEARCH\n          volumeMounts:\n          # ncp.ini\n        \
+      \  - name: config-volume\n            mountPath: /etc/nsx-ujo\n          # mount\
+      \ openvswitch dir\n          - name: openvswitch\n            mountPath: /var/run/openvswitch\n\
+      \          # mount CNI socket path\n          - name: cni-sock\n           \
+      \ mountPath: /var/run/nsx-ujo\n          # mount container namespace\n     \
+      \     - name: netns\n            mountPath: /var/run/netns\n          # mount\
+      \ host proc\n          - name: proc\n            mountPath: /host/proc\n   \
+      \         readOnly: true\n        - name: nsx-kube-proxy\n          # Docker\
+      \ image for NCP\n          image: registry.local/ob-6500154/nsx-ncp:latest\n\
+      \          imagePullPolicy: IfNotPresent\n          # override NCP image entrypoint\n\
+      \          command: [\"start_kube_proxy\"]\n          livenessProbe:\n     \
+      \       exec:\n              command:\n                - /bin/sh\n         \
+      \       - -c\n                - ps aux | grep [n]sx_kube_proxy\n           \
+      \ initialDelaySeconds: 5\n            periodSeconds: 5\n          securityContext:\n\
+      \            capabilities:\n              add:\n                - NET_ADMIN\n\
+      \                - SYS_ADMIN\n                - SYS_PTRACE\n               \
+      \ - DAC_READ_SEARCH\n          volumeMounts:\n          # ncp.ini\n        \
+      \  - name: config-volume\n            mountPath: /etc/nsx-ujo\n          # mount\
+      \ openvswitch dir\n          - name: openvswitch\n            mountPath: /var/run/openvswitch\n\
+      \      volumes:\n        - name: config-volume\n          configMap:\n     \
+      \       name: nsx-node-agent-config\n        - name: cni-sock\n          hostPath:\n\
+      \            path: /var/run/nsx-ujo\n        - name: netns\n          hostPath:\n\
+      \            path: /var/run/netns\n        - name: proc\n          hostPath:\n\
+      \            path: /proc\n        - name: openvswitch\n          hostPath:\n\
+      \            path: /var/run/openvswitch' > /tmp/ncp-ds.yaml\n\nelif [ \"$linux_distro\"\
+      \ == 2 ] ; then\n# Writting the RHEL DS yaml file\necho 'apiVersion: extensions/v1beta1\n\
+      kind: DaemonSet\nmetadata:\n  name: nsx-node-agent\n  labels:\n    tier: nsx-networking\n\
+      \    component: nsx-node-agent\n    version: v1\nspec:\n  template:\n    metadata:\n\
+      \      annotations:\n        #container.apparmor.security.beta.kubernetes.io/nsx-node-agent:\
+      \ localhost/node-agent-apparmor\n      labels:\n        tier: nsx-networking\n\
+      \        component: nsx-node-agent\n        version: v1\n    spec:\n      hostNetwork:\
+      \ true\n      # If configured with ServiceAccount, update the ServiceAccount\n\
+      \      # name below.\n      #serviceAccountName: nsx-kube-proxy-svc-account\n\
+      \      containers:\n        - name: nsx-node-agent\n          # Docker image\
+      \ for NCP\n          image: registry.local/ob-6500154/nsx-ncp:latest\n     \
+      \     imagePullPolicy: IfNotPresent\n          # override NCP image entrypoint\n\
+      \          command: [\"start_node_agent\"]\n          livenessProbe:\n     \
+      \       exec:\n              command:\n                - /bin/sh\n         \
+      \       - -c\n                - ps aux | grep [n]sx_node_agent\n           \
+      \ initialDelaySeconds: 5\n            periodSeconds: 5\n          securityContext:\n\
+      \            capabilities:\n              add:\n                - NET_ADMIN\n\
+      \                - SYS_ADMIN\n                - SYS_PTRACE\n               \
+      \ - DAC_READ_SEARCH\n          volumeMounts:\n          # ncp.ini\n        \
+      \  - name: config-volume\n            mountPath: /etc/nsx-ujo\n          # mount\
+      \ openvswitch dir\n          - name: openvswitch\n            mountPath: /var/run/openvswitch\n\
+      \          # mount CNI socket path\n          - name: cni-sock\n           \
+      \ mountPath: /var/run/nsx-ujo\n          # mount container namespace\n     \
+      \     - name: netns\n            mountPath: /var/run/netns\n          # mount\
+      \ host proc\n          - name: proc\n            mountPath: /host/proc\n   \
+      \         readOnly: true\n        - name: nsx-kube-proxy\n          # Docker\
+      \ image for NCP\n          image: registry.local/ob-6500154/nsx-ncp:latest\n\
+      \          imagePullPolicy: IfNotPresent\n          # override NCP image entrypoint\n\
+      \          command: [\"start_kube_proxy\"]\n          livenessProbe:\n     \
+      \       exec:\n              command:\n                - /bin/sh\n         \
+      \       - -c\n                - ps aux | grep [n]sx_kube_proxy\n           \
+      \ initialDelaySeconds: 5\n            periodSeconds: 5\n          securityContext:\n\
+      \            capabilities:\n              add:\n                - NET_ADMIN\n\
+      \                - SYS_ADMIN\n                - SYS_PTRACE\n               \
+      \ - DAC_READ_SEARCH\n          volumeMounts:\n          # ncp.ini\n        \
+      \  - name: config-volume\n            mountPath: /etc/nsx-ujo\n          # mount\
+      \ openvswitch dir\n          - name: openvswitch\n            mountPath: /var/run/openvswitch\n\
+      \      volumes:\n        - name: config-volume\n          configMap:\n     \
+      \       name: nsx-node-agent-config\n        - name: cni-sock\n          hostPath:\n\
+      \            path: /var/run/nsx-ujo\n        - name: netns\n          hostPath:\n\
+      \            path: /var/run/netns\n        - name: proc\n          hostPath:\n\
+      \            path: /proc\n        - name: openvswitch\n          hostPath:\n\
+      \            path: /var/run/openvswitch' > /tmp/ncp-ds.yaml\nfi\n# Creating\
+      \ the DaemonSets\nkubectl apply -f /tmp/ncp-ds.yaml\n\necho \"\"\necho \"\"\n\
+      echo \"╔═══════════════════════════════════════════════════════════════╗\"\n\
+      echo \"║ Writting the Ingress Controller file and creating it          ║\"\n\
+      echo \"╚═══════════════════════════════════════════════════════════════╝\"\n\
+      \necho 'apiVersion: v1\nkind: ReplicationController\nmetadata:\n  name: nginx-ingress-rc\n\
+      \  labels:\n    app: nginx-ingress\n  annotations:\n    ncp/ingress-controller:\
+      \ \"True\"\nspec:\n  replicas: 1\n  selector:\n    app: nginx-ingress\n  template:\n\
+      \    metadata:\n      labels:\n        app: nginx-ingress\n    spec:\n     \
+      \ containers:\n      - image: nginxdemos/nginx-ingress:0.8.1\n        imagePullPolicy:\
+      \ IfNotPresent\n        name: nginx-ingress\n        ports:\n        - containerPort:\
+      \ 80\n          hostPort: 80\n        - containerPort: 443\n          hostPort:\
+      \ 443\n        args:\n         - -v=3' > /tmp/ingress-controller.yaml\n# Creating\
+      \ the Ingress Controller\nkubectl apply -f /tmp/ingress-controller.yaml\n\n\
+      echo \"\"\necho \"\"\necho \"╔══════════════════════════════════════════════\
+      ═════════════════╗\"\necho \"║ Listing the K8s pods across all the name spaces\
+      \               ║\"\necho \"╚═══════════════════════════════════════════════\
+      ════════════════╝\"\necho \"Waiting for the NCP containers to load..\"\nsleep\
+      \ 1m\necho \"Listing the pods..\"\nkubectl get po -o wide --all-namespaces\n\
+      \n\necho \"\"\necho \"\"\necho \"╔══════════════════════════════════════════\
+      ═════════════════════╗\"\necho \"║ GIT'ing the Sphinx-Project app and running\
+      \ it                 ║\"\necho \"╚══════════════════════════════════════════\
+      ═════════════════════╝\"\nif [ -z \"$Git_Starter_App\" ]; then \n  echo \"No\
+      \ Git starter app provided.\"\n  else\n  git clone $Git_Starter_App StarterApp\n\
+      \  cd StarterApp\n  sh kube.ignite $Custom_Namespace\nfi\n# Deploy K8s Dashboard\n\
+      # kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml\n\
+      \n# Enabling the kubelet Service\nsystemctl enable kubelet\n\necho \"\"\necho\
+      \ \"\"\necho \"╔════════════════════════════════════════════════════════════\
+      ═══╗\"\necho \"║ Issue the following commands to start using the kubectl tool\
+      \  ║\"\necho \"╚════════════════════════════════════════════════════════════\
+      ═══╝\"\n\necho '\ncp /etc/kubernetes/admin.conf $HOME/\nchown $(id -u):$(id\
+      \ -g) $HOME/admin.conf\nexport KUBECONFIG=$HOME/admin.conf\n'\n\necho \"You\
+      \ may want to delete the kube-dns container due to race conditions by issuing\
+      \ the following commands:\"\necho \"kubectl delete po kube-dns-XXXXXXXX -n kube-system\"\
+      \necho \"\"\necho \"To check the status of pods across all the name-spaces:\"\
+      \necho \"watch kubectl get po -o wide --all-namespaces\"\n\n}\n\n\n###############################################################################################\n\
+      ## The Kube Node Function\n###############################################################################################\n\
+      funcKubeNode () {\n    if [ \"$linux_distro\" == 1 ] ; then\n      echo \"Writing\
+      \ hostname to Master\"\n      Ubuntu_IP_ADDRESS=\"$(ifconfig | grep -A 1 \"\
+      $mgmt_uplink_port\" | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)\"\n     \
+      \ sudo ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@$KubeMaster\
+      \ \"echo $Ubuntu_IP_ADDRESS $HOSTNAME.$domain_name $HOSTNAME >> /etc/hosts\"\
+      \n    elif [ \"$linux_distro\" == 2 ] ; then\n      echo \"Writing hostname\
+      \ to Master\"\n      RHEL_IP_ADDRESS=\"$(/usr/sbin/ifconfig | grep -A 1 \"$mgmt_uplink_port\"\
+      \ | tail -1 | cut -d 't' -f 2 | cut -d ' ' -f 2)\"\n      sudo ssh -o StrictHostKeyChecking=no\
+      \ -o UserKnownHostsFile=/dev/null root@$KubeMaster \"echo $RHEL_IP_ADDRESS $HOSTNAME.$domain_name\
+      \ $HOSTNAME >> /etc/hosts\" \n    fi\n\n    echo \"Joining the Master Cluster\"\
+      \n    sudo kubeadm join --token $kubeToken $KubeMaster:6443 --skip-preflight-checks\n\
+      }\n\n\n###############################################################################################\n\
+      ## START THE SCRIPT\n###############################################################################################\n\
+      \n# Set the PATH within the script\nexport PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin\n\
+      \nfuncLinuxDistro\nlinux_distro=$?\n\nif [ \"$linux_distro\" == 0 ] ; then\n\
+      \     echo \"Unsupported Linux Distribution. Existing with error!\"\n     exit\
+      \ 1\nelif [ \"$linux_distro\" == 1 ] ; then\n     echo \"Linux distro is Ubuntu\"\
+      \nelif [ \"$linux_distro\" == 2 ] ; then\n     echo \"Linux Distro is RHEL/CentOS\"\
+      \nfi\n\n# Ignite K8s\nif [ \"$kube_role\" == \"master\" ]; then\n\tfuncKubeCommons\n\
+      \tfuncKubeMaster\nelse\n\tfuncKubeCommons\n\tfuncKubeNode\nfi"
+    isRebootAfter: false
+    scriptTypeId: "Bash"
+  taskDescriptorRef:
+    id: "INSTALL"
+    label: "Install"
